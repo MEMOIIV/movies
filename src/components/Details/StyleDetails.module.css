@@ -1,0 +1,67 @@
+.Details{
+    font-family: var(--FountFamilyGlobal);
+}
+.Details h5{
+    font-weight: 300;
+}
+.Color_Title{
+    color: var(--secondFontColor);
+}
+.bg_color{
+    background-color: var(--bgColor);
+}
+.collectionContainer {
+    position: relative; /* لنتمكن من وضع الخطوط بشكل صحيح */
+    padding: 20px 0; /* مساحة علوية وسفلية حول النص */
+}
+.collectionContainer::after {
+    content: ""; /* إنشاء خطوط فارغة */
+    display: block; /* يجعلها تتصرف ككتل */
+    width: 100%; /* اجعل العرض 100% */
+    height: 1px; /* سمك الخط */
+    background-color: var(--secondFontColor2);; /* لون الخط */
+    position: absolute; /* يسمح بتحديد الموقع بشكل دقيق */
+}
+.collectionContainer2::after {
+    content: ""; /* إنشاء خطوط فارغة */
+    display: block; /* يجعلها تتصرف ككتل */
+    width: 30%; /* اجعل العرض 100% */
+    height: 1px; /* سمك الخط */
+    background-color: var(--secondFontColor2);; /* لون الخط */
+    position: absolute; /* يسمح بتحديد الموقع بشكل دقيق */
+}
+.collectionContainer::before {
+    content: ""; /* إنشاء خطوط فارغة */
+    display: block; /* يجعلها تتصرف ككتل */
+    width: 25%; /* اجعل العرض 100% */
+    height: 1px; /* سمك الخط */
+    background-color: var(--secondFontColor2); /* لون الخط */
+    position: absolute; /* يسمح بتحديد الموقع بشكل دقيق */
+}
+
+.collectionContainer::before {
+    top: 0; /* الخط العلوي في الأعلى */
+}
+
+.collectionContainer::after {
+    bottom: 0; /* الخط السفلي في الأسفل */
+}
+.myImage{
+    position: relative;
+    cursor: pointer;
+}
+.rating{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--lightBgColor);
+    top: 0;
+    right: 0;
+}
+.rating p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 0.7rem;
+}
