@@ -1,0 +1,23 @@
+*{
+    
+}
+.logoStyle{
+    font-weight: 500;
+    color: var(--fontColor);
+    font-family: var(--FountFamilyGlobal);
+}
+.logoStyle{
+padding: 0 !important;
+text-transform: uppercase;
+}
+nav{
+    background-color: var(--bgColor);
+    box-shadow: 0px 2px 20px  rgba(0, 0, 0 , 0.2);
+}
+nav i {
+    color: var(--fontColor);
+    margin: 0px 5px;
+}
+nav li{
+    font-family: var(--FountFamilyGlobal);
+}

@@ -1,0 +1,52 @@
+{
+  "singUp": [
+    {
+      "firstName": "amin",
+      "lastName": "said",
+      "age": "24",
+      "email": "amen@gmail.com",
+      "password": "Am123456",
+      "id": "f73e"
+    },
+    {
+      "firstName": "ahmed",
+      "lastName": "said",
+      "age": "26",
+      "email": "ahmed@gmail.com",
+      "password": "Ah123456",
+      "id": "b264"
+    },
+    {
+      "id": "6e21",
+      "firstName": "amin",
+      "lastName": "said",
+      "age": "24",
+      "email": "amin@gmail.com",
+      "password": "Am123456"
+    },
+    {
+      "id": "99f5",
+      "firstName": "amin",
+      "lastName": "said",
+      "age": "24",
+      "email": "amin@g.com",
+      "password": "Am123456"
+    },
+    {
+      "id": "707b",
+      "firstName": "amin",
+      "lastName": "said",
+      "age": "24",
+      "email": "amin@h.com",
+      "password": "Am123456"
+    },
+    {
+      "id": "c16c",
+      "firstName": "aya",
+      "lastName": "mohamed",
+      "age": "22",
+      "email": "aya@gmail.com",
+      "password": "Ay123456"
+    }
+  ]
+}

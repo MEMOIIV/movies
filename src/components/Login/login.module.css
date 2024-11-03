@@ -1,0 +1,22 @@
+.myRegister{
+    font-family: var(--FountFamilyGlobal);
+    color: var(--fontColor);
+    
+}
+.myRegister label{
+    margin: 6px 0px;
+}
+.myRegister h4{
+    letter-spacing: 0.02rem;
+    font-weight: 300;
+}
+.myRegister input::placeholder{
+    font-size: .8rem;
+}
+.alert.error{
+    color:#ef031b ;
+}
+.alert.success {
+    color:#13b038 ;
+
+}
