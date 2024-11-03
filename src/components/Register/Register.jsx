@@ -80,9 +80,10 @@ export default function Register() {
   }
   async function sendDataUser() {
     // إحضار جميع المستخدمين
-    axios.get("/singUp")
-      .then(response => {
-        console.log(response);
+    try {
+
+    const response = await axios.get(`${process.env.PUBLIC_URL}/dp.json`)
+
         // التحقق من وجود مستخدم بنفس البيانات
         const userExists = response.data.some(user => 
           user.firstName === dataUser.firstName &&
@@ -90,7 +91,6 @@ export default function Register() {
           user.age === dataUser.age &&
           user.email === dataUser.email &&
           user.password === dataUser.password
-          
         );
         
         
@@ -99,17 +99,18 @@ export default function Register() {
           alert("This user already exists. Please check the data or use other data.");
         } else {
           // إذا لم تكن البيانات موجودة، قم بإضافة المستخدم الجديد
-          axios.post("http://localhost:4000/singUp", dataUser)
-            .then(postResponse => {
+          await axios.post("http://localhost:4000/singUp", dataUser)
+            // .then(_postResponse => {
               // console.log(postResponse.data);
-              // alert("User has been registered successfully!");
-            });
+              alert("User has been registered successfully!");
+            // });
         }
-      })
-      .catch(error => {
+      }
+      catch(error) {
         console.error("Error communicating with the server:", error);
+        console.error("Error response:", error.response);
         alert("An error occurred during registration. Please try again later.");
-      });
+      };
   }
   
   
